@@ -1,0 +1,67 @@
+.mono-1 { background: #196a92; color: #f8fcfe; } /* darkest */
+.mono-2 { background: #1d7aa7; color: #f8fcfe; }
+.mono-3 { background: #208abd; color: #f8fcfe; }
+.mono-4 { background: #249ad3; color: #f8fcfe; } /* original */
+.mono-5 { background: #34a6dc; color: #02070a; }
+.mono-6 { background: #4aafe8; color: #02070a; }
+.mono-7 { background: #60b9e4; color: #02070a; } /* lightest */
+.showlarge { display: none; }
+
+a:link, a:visited { color: #f8fcfe; text-decoration: underline; }
+a:hover, a:active { color: #24d3b5; }
+
+.mainNav li { display: inline; margin-right: 1em; }
+.mainNav li a:link, .mainNav li a:visited { text-decoration: none; }
+.mainNav li a:hover, .mainNav li a:active { text-decoration: none; }
+
+/* Mobile first queries */
+body {
+	background: #249AD3;
+	color: #f8fcfe;
+}
+#mainContent {
+	margin-top: 10%;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+	.showlarge { display: block; }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	.showlarge { display: block; }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	.showlarge { display: block; }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+	body {
+		background: #249AD3;
+		color: #f8fcfe;
+
+
+		/* full size background, simple css solution */
+		/*
+		background: url('http://upload.wikimedia.org/wikipedia/commons/4/4e/Pleiades_large.jpg') no-repeat 50% 50% fixed; 
+		background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-webkit-background-size: cover;
+		*/
+	}
+	.showlarge { display: block; }
+	#mainContent {
+		margin-top: 25%;
+	}
+	
+}
