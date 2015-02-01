@@ -85,3 +85,15 @@
 127.0.0.1 - - [31/Jan/2015:21:21:52 -0500] "GET /js/jquery-1.11.2.min.js HTTP/1.1" 304 -
 127.0.0.1 - - [31/Jan/2015:21:21:52 -0500] "GET /js/backbone-min.js HTTP/1.1" 304 -
 127.0.0.1 - - [31/Jan/2015:21:21:52 -0500] "GET /js/utility.js HTTP/1.1" 304 -
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /index.html HTTP/1.1" 200 6952
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /js/require.js HTTP/1.1" 304 -
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /css/skeleton.css HTTP/1.1" 304 -
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /css/normalize.css HTTP/1.1" 304 -
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /js/underscore-min.js HTTP/1.1" 304 -
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /js/jquery-1.11.2.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /js/utility.js HTTP/1.1" 304 -
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /js/json2.js HTTP/1.1" 304 -
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /js/backbone-min.js HTTP/1.1" 304 -
+127.0.0.1 - - [31/Jan/2015:21:23:49 -0500] "GET /js/script.js HTTP/1.1" 304 -
