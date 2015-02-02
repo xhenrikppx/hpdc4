@@ -5,9 +5,10 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Henrik Persson :: Digital Strategist</title>
+  <title>Henrik Persson :: Digital Strategist and Product Manager</title>
   <meta name="description" content="">
   <meta name="author" content="">
+  <meta name="google-site-verification" content="LpsD2-CVDSVV7hpg6a7rpbBsIXfZP5zfxAGU8ciT9bQ" />
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -38,14 +39,21 @@
     <div class="row">
       <div id="mainContent" class="one-half column">
         <h2>Henrik Persson <i class="fa fa-code"></i></h2>
-        <h5>Digital Strategist</h5>
+        <h5>Digital Strategist / Product Manager</h5>
         <ul class="mainNav">
-          <li><a href=""><i class="fa fa-home"></i> home</a></li>
-          <li><a href=""><i class="fa fa-pencil"></i> blog</a></li>
-          <li><a href=""><i class="fa fa-briefcase"></i> portfolio</a></li>
-          <li><a href=""><i class="fa fa-file"></i> resume/cv</a></li>
+          <li><a href="#"><i class="fa fa-home"></i> home</a></li>
+          <li><a href="#" style="text-decoration: line-through !important;"><i class="fa fa-pencil"></i> blog</a></li>
+          <li><a href="#" style="text-decoration: line-through !important;"><i class="fa fa-briefcase"></i> portfolio</a></li>
+          <li><a href="#" style="text-decoration: line-through !important;"><i class="fa fa-file"></i> cv</a></li>
         </ul>
-        <p>I am an avid <strong>consumer</strong>, <strong>thinker</strong>, and <strong>creator</strong> of all things digital. I am the Director of Digital Technologies at the <a href="http://indianamuseum.org" target="_blank">Indiana State Museum</a>, where I am responsible for every digital touchpoint that a visitor encounters.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <p>I am an avid <strong>consumer</strong>, <strong>thinker</strong>, and <strong>creator</strong> of all things digital. Working as the Director of Digital Technologies at the <a href="http://indianamuseum.org" target="_blank">Indiana State Museum</a> I am responsible for every digital touchpoint that a visitor encounters.</p>
+      </div>
+      <div class="one-half column">
+        <p>I'm very interested in analytics, so I'm working on an <a href="http://henrikpersson.com/ism-visitors/mappiest.php" target="_blank">experiment</a> to help visualize where our visitors come from.</p>
       </div>
     </div>
     <div class="row showlarge">
@@ -72,7 +80,7 @@
       <div class="one-half column">&nbsp;</div>
       <div class="one-half column">
         <a href="https://twitter.com/henrikpp" target="_blank"><i class="fa fa-twitter" title="twitter"></i></a> 
-        <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"><i class="fa fa-linkedin" title="linkedin"></i></a> 
+        <a href="https://www.linkedin.com/in/henrikpp/" target="_blank"><i class="fa fa-linkedin" title="linkedin"></i></a> 
         <a href="https://github.com/xhenrikppx" target="_blank"><i class="fa fa-github-alt" title="github"></i></a> 
         <a href="https://www.drupal.org/u/henrik-persson" target="_blank"><i class="fa fa-drupal" title="drupal"></i></a>
         <a href="http://instagram.com/henrikpp" target="_blank"><i class="fa fa-instagram" title="instagram"></i></a> 
@@ -81,7 +89,6 @@
         <a href="http://www.pinterest.com/henrikp/" target="_blank"><i class="fa fa-pinterest" title="pinterest"></i></a>
         <a href="skype:henrik.persson.indy?chat" target="_blank"><i class="fa fa-skype" title="skype" id="SkypeButton_Call_henrik.persson.indy_1"></i></a>
         <a href="https://play.spotify.com/user/henrikpp" target="_blank"><i class="fa fa-spotify" title="spotify"></i></a>
-        <a href="http://thehenrik.com" target="_blank"><i class="fa fa-pencil" title="ghost blog"></i></a>
         <!--<a href="http://thehenrik.com" target="_blank"><i class="fa fa-pencil" title="ghost blog"></i></a>-->
         <!--
         <a href="http://twitter.com/henrikpp"><i class="fa fa-facebook"></i></a> 
@@ -108,14 +115,54 @@
 <!-- Google Analytics
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script>
-/*
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  var _gaq=[['_setAccount','UA-2812369-1'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0]; 
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
+  ga('create', 'UA-2812369-1', 'auto');
+  ga('send', 'pageview');
 
-*/
+  /* Track outbound links in Google Analytics */
+  (function($) {
+   
+    "use strict";
+   
+    // current page host
+    var baseURI = window.location.host;
+   
+    // click event on body
+    $("body").on("click", function(e) {
+   
+      // abandon if link already aborted or analytics is not available
+      if (e.isDefaultPrevented() || typeof ga !== "function") return;
+   
+      // abandon if no active link or link within domain
+      var link = $(e.target).closest("a");
+      if (link.length != 1 || baseURI == link[0].host) return;
+   
+      // cancel event and record outbound link
+      e.preventDefault();
+      var href = link[0].href;
+      ga('send', {
+        'hitType': 'event',
+        'eventCategory': 'outbound',
+        'eventAction': 'link',
+        'eventLabel': href,
+        'hitCallback': loadPage
+      });
+   
+      // redirect after one second if recording takes too long
+      setTimeout(loadPage, 1000);
+   
+      // redirect to outbound page
+      function loadPage() {
+        document.location = href;
+      }
+   
+    });
+   
+  })(jQuery); // pass another library here if required
 </script>
 
   <!-- End Document
