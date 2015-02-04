@@ -1,0 +1,2 @@
+[Wed Feb 04 15:22:50.881737 2015] [core:error] [pid 7471] (13)Permission denied: [client 127.0.0.1:51399] AH00132: file permissions deny server access: /Users/henrik/Sites/hpdc4.dev/henrikpersson-cv.pdf, referer: http://hpdc4.dev/
+[Wed Feb 04 15:22:59.000970 2015] [core:error] [pid 7469] (13)Permission denied: [client 127.0.0.1:51435] AH00132: file permissions deny server access: /Users/henrik/Sites/hpdc4.dev/henrikpersson-cv.pdf, referer: http://hpdc4.dev/
